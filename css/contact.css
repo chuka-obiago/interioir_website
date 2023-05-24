@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-success:#41f1b6;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.contact_container {
+    width:100%;
+    height:100vh;
+
+}
+
+.danger {
+    color: #ff6572;
+}
+
+.container header {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.452);
+    padding: 0.3rem;
+}
+
+header .logo {
+    display:flex;
+    align-items: center;
+    padding-left:0.5rem;
+}
+
+header .logo h2 {
+    color:transparent;
+    background-image: linear-gradient(43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%);;
+    -webkit-background-clip: text;
+    font-size:1.4rem;
+}
+
+header ul {
+    display:flex;
+}
+
+header ul li {
+    list-style:none;
+}
+
+header ul li a {
+    font-size:0.83rem;
+    padding:0 0.3rem;
+    text-decoration:none;
+    color: #000;
+}
+
+header .nav-right{
+    padding-right:0.5rem;
+}
+
+header .nav-right ul li .active {
+    color:#6408f7;
+}
+
+.container main {
+    width:94%;  
+    margin:0 auto;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding-top:2rem;
+    margin-bottom: 1.8rem;
+}
+
+main section .section .contact-form {
+    width:100%;
+}
+
+main section .section .contact-form form {
+    width:50%;
+    height:440px;    
+    padding:2rem;
+    background:#fff;
+    box-shadow: 0 0rem 1.5rem #dce1eb;
+    position: relative;
+    border-radius:1rem;
+    margin-left:4rem;
+}
+
+main section .section .contact-form form::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:10px;
+    background-image: linear-gradient(43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%);
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+main section .section .contact-form form label {
+    font-size: 0.88rem;
+}
+
+main section .section .contact-form form input {
+    width:100%;
+    height:2.2rem;
+    border-radius: 0.2rem;
+    outline:none;
+    border:1px solid #a5a5a5;
+    margin-bottom:0.5rem;
+    padding-left:0.3rem;
+}
+
+main section .section .contact-form form input::placeholder { 
+    color: #9b9b9b;
+}
+
+main section .section .contact-form form select {
+    width:100%;
+    height:2.2rem;
+    border-radius: 0.2rem;
+    outline:none;
+    border:1px solid #a5a5a5;
+    margin-bottom: 0.5rem;
+}
+
+main section .section .contact-form form textarea {
+    width:100%;
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+    outline:none;
+    border:1px solid #a5a5a5;
+    padding-left:0.3rem;
+}
+
+main section .section .contact-form form textarea::placeholder {
+    color: #9b9b9b;
+}
+
+main section .section .contact-form form .name{
+    width:100%;
+    display:flex;
+    gap:1rem;
+}
+
+main section .section .contact-form form input[type=submit] {
+    width:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    outline:0;
+    border: 1px solid;
+    border-image:linear-gradient(43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%);
+    border-image-slice:1;
+    border-width:2px;
+    background:none;
+}
+
+main section .contact-us {
+    width:100%;
+    margin-left:-9%;
+}
+
+.contact-us .contact {
+    width:95%;
+}
+
+.contact-us .contact .text {
+    margin-bottom:2rem;
+}
+
+.contact-us .contact .text .active {
+    color:#4158d0;
+}
+
+.contact-us .contact .accordion .dropdown {
+    width:80%;
+}
+
+.contact-us .contact .accordion .dropdown ul {
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-us .contact .accordion .dropdown ul li {
+    list-style:none;
+    position:relative;
+    margin-bottom:2.5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-us .contact .accordion .dropdown ul li .icons {
+    position: absolute;
+    right:0;
+    cursor: pointer;
+}
+
+.contact-us .contact .accordion .dropdown ul li .icons i {
+    position: absolute;
+    font-size:0.7rem;
+    padding:0.2rem;
+    border-radius:50%;
+    background:#4158d0;
+    color: #fff;
+}
+
+.contact-us .contact .accordion .dropdown ul li .icons .fa-minus {
+    display:none;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content {
+    overflow:hidden;
+    height:0;
+    transition: all 300ms ease;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content2 {
+    overflow:hidden;
+    height:0;
+    transition: all 300ms ease;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content3 {
+    overflow:hidden;
+    height:0;
+    transition: all 300ms ease;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content.show {
+    height:5rem;
+    transition:all 300ms ease;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content2.show1 {
+    height:5rem;
+    transition:all 300ms ease;
+}
+
+.contact-us .contact .accordion .dropdown ul li .content3.show2 {
+    height:5rem;
+    transition:all 300ms ease;
+}
+
+
+main .links {
+    width:100%;
+    height:100px;
+    margin-bottom: 60px;
+}
+
+main .links .content {
+    width:90%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:0 auto;
+    box-shadow: 0 0 15px #dce1eb;
+    border-radius: 1rem;
+    padding:2rem;
+}
+
+main .links .content a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+main .links .content a i {
+    font-size:1.27rem;
+}
+
+main .links .content a:nth-child(1) i {
+    color:var(--color-success);
+}
+
+main .links .content a:nth-child(2) i {
+    color:#4d68f1;
+}
+
+main .links .content a:nth-child(3) i {
+    color:#6408f7;
+}
+
+main .links .content a span {
+    font-size: 0.89rem;
+}

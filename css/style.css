@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    transition: all 0.25s ease-in;
+}
+
+.navbar-scrolled {
+    background-color: hsl(0, 0%, 20%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.fixed-top {
+    position: fixed;
+}
+
+#home_background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../images/black\ counter\ top.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    line-height: 1.6;
+    background-color: #000;
+}
+
+#home_background h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+/* #home_background h1 span{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+#home_background p {
+    font-size: 1.5rem;
+    margin: 30px 0px;
+    
+}
+
+#home_background button {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 6px 8px;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid ;
+    border-image: linear-gradient(to right, blue, red) 1;
+    /* border-image: linear-gradient(to right, #00093c, #752105) 1; */
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#home_background a span {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.25s;
+}
+
+#home_background a button:hover span{
+    width: 100%;
+    z-index: 0;
+}
+
+/* ABOUT DESCRIPTION STYLING */
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.about_container {
+   width: 1290px;
+   max-width: 95%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.about .about_container img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.about_para {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.about_para h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+.pretty{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about_para p{
+    font-size: 20px;
+    color: #555555;
+    margin: 25px 0;
+    line-height: 20px;
+}
+
+.button_container .btn-outline-primary{
+    color: black;
+    font-weight: bold;
+    border: 2px solid ;
+    border-image: linear-gradient(to right, blue, red) 1
+}
+
+.button_container .btn-outline-primary:hover {
+    background-image: linear-gradient(to right, #00093c, #2d0b00);
+}
+
+
+/* QUALITIES SECTION STYLING */
+.quality {
+    padding: 6rem 0;
+}
+
+.quality_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 1rem auto;
+    
+}
+
+.quality_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.quality_item {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.quality_item span {
+    font-size: 1.5rem;
+}
+
+.quality_item h3 {
+    font-weight: 500;
+    margin: 20px;
+}
+
+.quality_item p {
+    font-size: 20px;
+    color: #555555;
+    margin: 0 5px;
+}
+
+
+/* -----------------PROJECT STYLING-------------- */
+.project {
+    margin: 0 18px;
+}
+
+.project_container {
+    display: flex;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.project_container img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 4px;
+    transition: all 0.5s ease;
+}
+
+.project_container img:hover {
+    cursor: pointer;
+}
+
+.image_container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text_overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff; 
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.image_container:hover .text_overlay {
+    opacity: 1;
+}
+.image_container:hover img {
+    transform: scale(1.1);
+}
+
+.view_more_container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view_more_container .btn-outline-primary{
+    color: black;
+    font-weight: bold;
+    border: 2px solid ;
+    border-image: linear-gradient(to right, blue, red) 1
+}
+.view_more_container .btn-outline-primary:hover {
+    background-image: linear-gradient(to right, #00093c, #2d0b00);
+}
+
+
+
+/* --------------- FOOTER STYLING ---------------- */
+footer {
+    background: hsl(0, 0%, 10%);
+    color: #fff;
+    height: auto;
+    width: 100w;
+    padding: 0px;
+}
+footer a {
+    text-decoration: none;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_content h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-top: 1.2rem;
+}
+
+.footer_content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.socials li {
+    margin: 10px 10px;
+}
+.socials a {
+    color: #fff;
+}
+.socials a i {
+    font-size: 1.2rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #2134a0;
+}
+
+.footer_bottom {
+    background: hsl(0, 0%, 5%);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+}
+.footer_bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
+.footer_bottom span {
+    opacity: 0.4;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
