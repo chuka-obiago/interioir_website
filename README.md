@@ -1,4 +1,4 @@
-# About Project
+# Interior Design Agency Website
 A multi-page website for an interior design agency. 
 
 ## Tech Stach
