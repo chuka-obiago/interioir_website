@@ -1,3 +1,15 @@
+let nav = document.querySelector('.navbar')
+
+// NAVBAR FIXED ON SCROLL
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 1){
+        nav.classList.add("fixed-top")
+    }
+    else{
+        nav.classList.remove("fixed-top")
+    }
+})
+
 const dropDown = document.querySelector(".content");
 const dropDown1 = document.querySelector(".content2");
 const dropDown2 = document.querySelector(".content3");

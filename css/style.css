@@ -263,7 +263,8 @@
     color: black;
     font-weight: bold;
     border: 2px solid ;
-    border-image: linear-gradient(to right, blue, red) 1
+    border-image: linear-gradient(to right, blue, red) 1;
+    margin-bottom: 50px;
 }
 .view_more_container .btn-outline-primary:hover {
     background-image: linear-gradient(to right, #00093c, #2d0b00);
@@ -303,6 +304,10 @@ footer a {
     line-height: 22px;
     margin: 10px auto;
     max-width: 500px;
+}
+
+.socials.links {
+    margin: 0px;
 }
 
 .socials {
